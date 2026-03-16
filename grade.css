@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    color: #e0e0ff;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#card {
+    background-color: #16213e;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 2px solid #0f3460;
+    width: 520px;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+input {
+    padding: 9px 12px;
+    margin: 6px auto;
+    background-color: #1a1a2e;
+    border: 2px solid #e0e0ff;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 13px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#studentName {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 40px;
+    margin-top: 12px;
+    background-color: #0f3460;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+}
+
+button:hover {
+    background-color: #533483;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    background-color: #16213e;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 2px solid #0f3460;
+    display: none;
+    width: 520px;
+    box-sizing: border-box;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 15px;
+    border: 1px solid #0f3460;
+    text-align: center;
+}
+
+th {
+    background-color: #0f3460;
+    color: #e0e0ff;
+}
+
+.grade-Aplus {
+    color: green;
+}
+
+.grade-A {
+    color: lightgreen;
+}
+
+.grade-B {
+    color: #4fc3f7;
+}
+
+.grade-C {
+    color: orange;
+}
+
+.grade-D {
+    color: brown;
+}
+
+.grade-F {
+    color: red;
+}
+
+#overall {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}

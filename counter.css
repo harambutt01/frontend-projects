@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#count {
+    font-family: Arial,  sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#increment{
+    background-color: green;
+    
+}
+
+#increment:hover{
+    background-color: darkgreen;
+}
+
+#decrement{
+    background-color: red;
+    
+}
+
+#decrement:hover{
+    background-color: darkred;
+}
+
+#reset{
+   background-color: gray;
+}
+
+#reset:hover{
+    background-color: #5a5a5a;
+}
+
+.positive{
+    color: green;
+
+}
+
+.negative{
+    color: red;
+}
+
+button{
+      padding: 10px 40px;
+    margin-top: 12px;
+    
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+}
+
+
+

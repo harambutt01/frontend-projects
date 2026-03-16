@@ -56,12 +56,12 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-@media (max-width: 576px) {
+ @media (max-width: 576px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
     }
-}
+} 
 
 .hero {
     position: relative;
@@ -72,11 +72,9 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+border: 1px solid red;
 
-    .hero {
-        border: 1px solid red;
-    }
-
+     
 }
 
 .hero-overlay {
@@ -130,12 +128,12 @@ nav ul li a:hover {
 
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .hero {
         background-position: top center;
         height: 70vh;
     }
-}
+} 
 
 .btn-cta {
     text-decoration: none;
@@ -158,7 +156,7 @@ nav ul li a:hover {
 
 /* Responsive adjustment */
 
-@media(max-width: 786px) {
+ @media(max-width: 786px) {
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -167,13 +165,13 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 
-}
-
+} 
+ 
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 1.5rem;
     }
-}
+} 
 
 .hero-content p {
     font-size: 0.9rem;
@@ -222,7 +220,7 @@ nav ul li a:hover {
 
 /* responsive */
 
-@media (max-width: 780px) {
+ @media (max-width: 780px) {
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -232,7 +230,7 @@ nav ul li a:hover {
         max-width: 100%;
     }
 
-}
+} 
 
 .service {
     padding: 80px 20px;
@@ -300,11 +298,11 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
     }
-}
+} 
 
 .pricing {
     padding: 80px 20px;
@@ -464,13 +462,13 @@ nav ul li a:hover {
     color: #38bdf8;
 }
 
-@media (max-width:600px) {
+ @media (max-width:600px) {
     .footer-links {
         flex-direction: column;
         gap: 10px;
     }
 
-}
+} 
 
 /* HAMBURGER MENU (CSS ONLY)  */
 #menu-toggle {
@@ -491,21 +489,21 @@ nav ul li a:hover {
     border-radius: 2px;
 }
 
-@media (max-width: 768px) {
+   @media (max-width: 768px) {
 
     .menu-icon {
         display: flex;
-    }
+    } 
 
 
 
     /* MOBILE VIEW */
-    @media (max-width: 768px)
+     @media (max-width: 768px)
 
     /* show 3 bars */
     .menu-icon {
         display: flex;
-    }
+    } 
 
     /* hide menu initially */
     nav ul {
@@ -540,7 +538,7 @@ nav ul li a:hover {
 }
 
 /* Hero sizing adjustments */
-@media (max-width: 768px) {
+   @media (max-width: 768px) {
   .hero {
     background-position: top center;
     height: 70vh;
@@ -551,7 +549,7 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
   .hero-content h1 { font-size: 1.5rem; }
-}
+} 
 
 /* About section fixes: correct selector typo and make image fluid */
 .about-container {
@@ -657,7 +655,7 @@ nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; alig
   .menu-icon { display: flex; }
 
   /* hide menu initially and position it */
-  nav ul {
+ nav ul {
     display: none;
     flex-direction: column;
     gap: 10px;
@@ -668,8 +666,8 @@ nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; alig
     padding: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 999;
-  }
-
+  } 
+ 
   /* Use general sibling selector to match your HTML structure:
      input#menu-toggle ~ .nav-menu (input then label then ul) */
   #menu-toggle:checked ~ .nav-menu {
@@ -689,4 +687,4 @@ nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; alig
 img, video, iframe { max-width: 100%; height: auto; display: block; }
 
 /* Prevent page-level horizontal scroll as a last resort */
-html, body { margin: 0; padding: 0; overflow-x: hidden; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; } 
