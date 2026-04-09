@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">TRENDORA</h1>
+
+        <div class="menu" id="menu">
+            <button id="closeBtn">✕</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="search-box">
+            <input class="srch" type="text" placeholder="Search here">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <div class="header-top">
+            <button class="hamburger" id="hamburger">☰</button>
+
+
+        </div>
+    </header>
+    <section class="faq-hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions about our products, orders, and policies.</p>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-item">
+            <h3>1. What payment methods do you accept?</h3>
+            <p>We accept all major credit/debit cards, PayPal, and Cash on Delivery (for select locations).</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>2. How can I track my order?</h3>
+            <p>Once your order is shipped, you’ll receive a tracking number via email to monitor your delivery.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>3. What is your return/exchange policy?</h3>
+            <p>We accept returns/exchanges within 14 days of delivery. Items must be unused and in original packaging.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>4. Do you ship internationally?</h3>
+            <p>Currently, we only ship within Pakistan. International shipping will be available soon.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>5. How can I contact customer support?</h3>
+            <p>You can reach us via our <a href="contact.html">Contact Us</a> page, email at info@yourbrand.com, or call
+                +92-XXX-XXXXXXX.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- About / Brand -->
+            <div class="footer-section footer-about">
+                <h3>TRENDORA</h3>
+                <p>Your one-stop shop for home, fashion, electronics & more!</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section footer-links-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@trendora.com">info@trendora.com</a></p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Address: 123 Main Street, Your City</p>
+            </div>
+
+            <!-- Newsletter + Social -->
+            <div class="footer-section footer-newsletter">
+                <h4>Subscribe</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="fb.avif" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="insta.avif" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="x.avif" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom / Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> TRENDORA. All rights reserved.</p>
+            <div class="payment-icons">
+                <img src="images.png" alt="JazzCash">
+                <img src="Easypaisa-logo.png" alt="EasyPaisa">
+                <img src="Mastercard-logo.svg" alt="MasterCard">
+                <img src="cod.jpg" alt="Cash on Delivery">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

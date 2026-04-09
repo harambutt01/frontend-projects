@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>shop</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">TRENDORA</h1>
+
+        <div class="menu" id="menu">
+            <button id="closeBtn">✕</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="search-box">
+            <input class="srch" type="text" placeholder="Search here">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <div class="header-top">
+            <button class="hamburger" id="hamburger">☰</button>
+            <div class="icons">
+                <button id="cartBtn">🛒 <span class="cart-text">Add to Cart (0)</span></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero shop-hero">
+        <div class="hero-content">
+            <h1>Where Every Style</h1>
+            <h2>Finds Its Home</h2>
+            <p class="slogan">Explore Fashion, Beauty & Beyound</p>
+            <p>Up to 50% Off</p>
+        </div>
+    </section>
+
+    <div class="tab-bar">
+        <button class="tab-btn active" onclick="filterCategory('all', this)">All</button>
+        <button class="tab-btn" onclick="filterCategory('fashion', this)">Fashion</button>
+        <button class="tab-btn" onclick="filterCategory('home', this)">Home</button>
+        <button class="tab-btn" onclick="filterCategory('electronics', this)">Electronics</button>
+        <button class="tab-btn" onclick="filterCategory('watches', this)">Watches</button>
+        <button class="tab-btn" onclick="filterCategory('sports', this)">Sports</button>
+        <button class="tab-btn" onclick="filterCategory('skincare', this)">Skin Care</button>
+        <button class="tab-btn" onclick="filterCategory('sunglasses', this)">Sunglasses</button>
+        <button class="tab-btn" onclick="filterCategory('vehicles', this)">Vehicles</button>
+        <button class="tab-btn" onclick="filterCategory('fragrances', this)">Fragrances</button>
+        <button class="tab-btn" onclick="filterCategory('accessories', this)">Accessories</button>
+    </div>
+    <div id="shopSection">
+
+
+        <div class="category-block" data-cat="fashion">
+            <div class="category-header">
+                <h2>Fashion</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="home">
+            <div class="category-header">
+                <h2>Home</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="electronics">
+            <div class="category-header">
+                <h2>Electronics</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="watches">
+            <div class="category-header">
+                <h2>Watches</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="sports">
+            <div class="category-header">
+                <h2>Sports</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="skincare">
+            <div class="category-header">
+                <h2>Skin Care</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="sunglasses">
+            <div class="category-header">
+                <h2>Sunglasses</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="vehicles">
+            <div class="category-header">
+                <h2>Vehicles</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="fragrances">
+            <div class="category-header">
+                <h2>Fragrances</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block" data-cat="accessories">
+            <div class="category-header">
+                <h2>Accessories</h2>
+                <button class="view-all-btn" onclick="viewAll(this)">View All</button>
+            </div>
+            <div class="products-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p class="price"></p>
+                    <div class="card-btns">
+                        <button class="btn-cart">Add to Cart</button>
+                        <button class="btn-shop">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="see-more-wrap">
+        <button class="see-more-btn" onclick="toggleCategories(this)">See More</button>
+    </div>
+
+    <!-- cart functionality -->
+
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button onclick="closeCart()">✕</button>
+
+
+        </div>
+        <div id="cartItems"></div>
+        <p id="cartTotal"></p>
+        <button id="checkoutBtn">Checkout</button>
+
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- About / Brand -->
+            <div class="footer-section footer-about">
+                <h3>TRENDORA</h3>
+                <p>Your one-stop shop for home, fashion, electronics & more!</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section footer-links-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@trendora.com">info@trendora.com</a></p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Address: 123 Main Street, Your City</p>
+            </div>
+
+            <!-- Newsletter + Social -->
+            <div class="footer-section footer-newsletter">
+                <h4>Subscribe</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="fb.avif" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="insta.avif" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="x.avif" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Bottom / Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> TRENDORA. All rights reserved.</p>
+            <div class="payment-icons">
+                <img src="images.png" alt="JazzCash">
+                <img src="Easypaisa-logo.png" alt="EasyPaisa">
+                <img src="Mastercard-logo.svg" alt="MasterCard">
+                <img src="cod.jpg" alt="Cash on Delivery">
+            </div>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
