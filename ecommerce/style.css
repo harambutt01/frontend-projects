@@ -239,12 +239,18 @@ p.slogan {
 
 .card-btns {
     display: flex;
+    justify-content: center; /* Single button ko center karne ke liye */
+    margin-top: auto;
+    padding: 0 15px 15px 15px;
+    
+}
+.shop-card-btns {
+    display: flex;
     margin-top: auto;
     gap: 10px;
     padding: 15px;
 }
-
-.card-btns button {
+.shop-card-btns button {
     flex: 1;
     padding: 10px 5px;
     border: none;
@@ -256,6 +262,25 @@ p.slogan {
     text-transform: uppercase;
 }
 
+.explore-btn {
+    padding: 12px 5px;
+    border: 1.5px solid #1a1a1a;
+    color: #1a1a1a;
+    cursor: pointer;
+    font-size: 13px; 
+    font-weight: 600;
+    transition: 0.3s ease;
+    letter-spacing: 1.5px; 
+    text-transform: uppercase;
+    text-decoration: none; 
+    border-radius: 2px; 
+}
+
+.explore-btn:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+    letter-spacing: 2px; 
+}
 .btn-cart {
     background-color: var(--primary-dark);  
     color: var(--white);
@@ -795,7 +820,6 @@ p.slogan {
    
 }
 
-/* Contact Form */
 .contact-form-section {
     max-width: 600px;
     margin: 50px auto;
@@ -827,8 +851,6 @@ p.slogan {
 .contact-form button:hover {
     background-color: #a0174a;
 }
-
-/* Contact Info  */
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -965,6 +987,13 @@ p.slogan {
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    .shop-card-btns{
+        padding: 10px;
+        gap: 5px;
+    }
+    .shop-card-btns button{
+        font-size: 10px;
+    }
 
     
   .contact-info {
@@ -1010,8 +1039,8 @@ p.slogan {
     font-size: 13px;
   }
   .footer-bottom {
-    height: auto; /* allow flexible height */
-    flex-direction: column; /* stack content vertically if needed */
+    height: auto; 
+    flex-direction: column;  
     text-align: center;
     padding: 10px 20px;
     gap: 10px;
@@ -1047,8 +1076,19 @@ p.slogan {
         font-size: 17px;
     }
 
-    .products-grid {
+     .products-grid {
         grid-template-columns: repeat(2, 1fr);
+    } 
+     
+
+    .explore-btn{
+        padding: 10px;
+        font-size: 11px;
+        
+    }
+    .shop-card-btns{
+        flex-direction: column;
+        gap: 8px;
     }
 
     .tab-btn {
