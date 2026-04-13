@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MyShop</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">MyShop</div>
+        <nav class="nav" id="navMenu">
+            <a href="ecommerce.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search products">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <div class="icons">
+            <button id="cartBtn">🛒 Add to Cart (0)</button>
+            <button id="menuBtn">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Shop Our Products</h1>
+        <p>Browse all available products below</p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <h2>All Products</h2>
+        <div id="productContainer" class="product-container"></div>
+    </section>
+
+    <!-- CART SIDEBAR -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+        <p id="cartTotal"></p>
+        <button id="checkoutBtn">Checkout</button>
+        <button id="closeCart">Close</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>MyShop</h3>
+                <p>Best products at affordable prices.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="ecommerce.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Email: support@myshop.com</p>
+                <p>Phone: +92 300 1234567</p>
+            </div>
+        </div>
+        <p class="copyright">
+            © 2026 MyShop. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
